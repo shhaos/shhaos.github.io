@@ -85,3 +85,7 @@ h3 {font-size: 21px;}
     border-right:1px solid #eee;
     border-bottom:1px solid #eee;
 }
+
+.navbar-right {
+    padding-right:260px;
+}
