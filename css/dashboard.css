@@ -81,3 +81,7 @@ body {
 .main .page-header {
   margin-top: 0;
 }
+
+.list-group-striped > .list-group-item:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
