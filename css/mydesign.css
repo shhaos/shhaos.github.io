@@ -10,6 +10,18 @@ body {
 //    font-family:"PT Serif", sans-serif;
 }
 
+/*
+#show_all_pubs {
+}
+
+#hide_all_pubs {
+  display: none;
+}
+
+.hidden_pub {
+  display: none;
+}
+*/
 
 h1,h2,h3,h4 {
     margin-bottom: -8px;
