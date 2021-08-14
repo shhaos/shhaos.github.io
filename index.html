@@ -71,7 +71,7 @@
 				<a href="https://twitter.com/haoscs" target="_blank"><img src="images/twitter.png" width="23" height="23" style="margin-left:5px; margin-right:5px;"></img></a>
 			</p>
 			<div style="margin-left:20%; margin-right:10%; margin-top:30px;"><hr></div>
-			<p style="margin-left:20%; margin-top:20px;"><span class="sulightfont">Office hours - Spring 2021: 2-4 pm Wed</span><br><br>
+			<p style="margin-left:20%; margin-top:20px;"><span class="sulightfont">Office hours - Fall 2021: TBD</span><br><br>
 	</div>
 	
 	<div id="bio" class="col-sm-7 col-sm-offset-4 col-md-7 col-md-offset-4 main">
@@ -93,6 +93,24 @@
 		My research interest lies in Networking and Security, with the specific focus on applying measurement, empirical study, and data-driven approach to study Internet Infrastructure (Topology, Routing, DNS, CDN, etc.), Security and Privacy of Internet and Networking Systems, Web Security and Privacy, and Cybercrime.<br>
 		<h4 style="margin-left:1px; margin-top:20px;">Recent & Selected Publications</h4><br>
 		<ol id="pubs" class="list-group list-group-striped">
+			<li class="list-group-item">
+				Lin Jin, <b>Shuai Hao</b>, Yan Huang, Haining Wang, and Chase Cotton.<br><b><!--a href="papers/icnp21.pdf" target="_blank"-->DNSonChain: Delegating Privacy-Preserved DNS Resolution to Blockchain</b>,<br>In <i>the 29th IEEE International Conference on Network Protocols (<a href="https://icnp21.cs.ucr.edu/" target="_blank"><b>ICNP</b></a>)</i>, 2021.
+				<a data-toggle="collapse" href="#JinICNP21" aria-expanded="false" aria-controls="JinICNP21" class="sulightfont"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>BibTex</a><div class="collapse" id="JinICNP21"><div class="card card-body sulightfont" style="margin-left:20px;margin-top:10px;">@inproceedings{JinICNP21,<p style="margin-left:40px;">author = {Jin, Lin and Hao, Shuai and Huang Yan and Wang, Haining and Cotton, Chase},<br>title = {{DNSonChain: Delegating Privacy-Preserved DNS Resolution to Blockchain}},<br>booktitle = {the 29th IEEE International Conference on Network Protocols (ICNP)},<br>year = {2021},<br><span style="margin-left:-30px;">}</span>
+				<!--p><a data-toggle="collapse" href="#JinICNP21abstract" aria-expanded="false" aria-controls="JinICNP21abstract" class="sulightfont"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right:2px;"></span> Abstract</a><div class="collapse" id="JinICNP21abstract"><div class="card card-body sulightfont"><p>Domain Name System (DNS) has well-known privacy issues. With the properties of append-only ledges and no central point of trust, blockchains are being used to host DNS records, hence users can synchronize the blockchain to build a local DNS database and resolve domains locally to preserve DNS privacy. However, existing blockchain-based naming systems are deficient to enable domains from the DNS namespace. In this paper, we present DNSonChain, a new blockchain-based naming service compatible with DNS, to fully address such issues. It allows domain owners to claim their domain ownership on the blockchain, on which DNS records can then be hosted. The core function of DNSonChain is to validate the domain ownership in a decentralized manner. To do so, we propose a majority vote mechanism that randomly selects multiple participants (i.e., voters) in the system to vote for the authority of domain ownership. To provide resistance to attacks that fool voters, DNSonChain requires two rounds of voting processes. Our security analysis shows that DNSonChain is very robust against security failure. Moreover, DNSonChain can recover from various attacks. To demonstrate the feasibility of DNSonChain, we implement a prototype of DNSonChain as an Ethereum decentralized application and evaluate it on an Ethereum Testnet.</div></div-->
+				</div></div>
+			</li>
+			<li class="list-group-item">
+				Hao Yang, Kun Du, Yubao Zhang, <b>Shuai Hao</b>, Haining Wang, Jia Zhang, and Haixin Duan.<br><b><!--a href="papers/esorics21.pdf" target="_blank"-->Mingling of Clear and Muddy Water: Understanding and Detecting Semantic Confusion in Blackhat SEO</b>,<br>In <i>the 26th European Symposium on Research in Computer Security (<a href="https://esorics2021.athene-center.de/index.php" target="_blank"><b>ESORICS</b></a>)</i>, 2021.
+				<a data-toggle="collapse" href="#YangESORICS21" aria-expanded="false" aria-controls="YangESORICS21" class="sulightfont"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>BibTex</a><div class="collapse" id="YangESORICS21"><div class="card card-body sulightfont" style="margin-left:20px;margin-top:10px;">@inproceedings{Yang:ESORICS21,<p style="margin-left:40px;">author = {Yang, Hao and Du, Kun and Zhang, Yubao and Hao, Shuai and Wang, Haining and Duan, Haixin},<br>title = {{Mingling of Clear and Muddy Water: Understanding and Detecting Semantic Confusion in Blackhat SEO}},<br>booktitle = {the 26th European Symposium on Research in Computer Security (ESORICS)},<br>year = {2021},<br><span style="margin-left:-30px;">}</span>
+				<!--p><a data-toggle="collapse" href="#YangESORICS21abstract" aria-expanded="false" aria-controls="YangESORICS21abstract" class="sulightfont"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right:2px;"></span> Abstract</a><div class="collapse" id="YangESORICS21abstract"><div class="card card-body sulightfont"><p>Search Engine Optimization (SEO) is a set of techniques that help website operators increase the visibility of their webpages to search engine users. However, there are also many unethical practices that abuse ranking algorithms of a search engine to promote illegal online content, called blackhat SEO. In this paper, we make the first attempt to systematically investigate a recent trend in blackhat SEO, semantic confusion, which mingles the content of a webpage to deceive existing detection of blackhat SEO. In particular, from a new perspective of content semantics, we propose an effective defense against the semantic confusion based blackhat SEO. We built a prototype of our defense called SCDS, and then we validated its effectiveness based on 4.5 million domains randomly selected from 11 zone files and passive DNS records. Our evaluation results show that SCDS can detect more than 82 thousand blackhat SEO websites with a precision of 98.35%. We further analyzed 57,477 long-tail keywords promoted by blackhat SEO and found more than 157 SEO campaigns. Finally, we deployed SCDS into the gateway of a campus network for ten months and detected 23,093 domains with malicious semantic confusion content, showing the effectiveness of SCDS in practice.</div></div-->
+				</div></div>
+			</li>
+			<li class="list-group-item">
+				Rebekah Houser, <b>Shuai Hao</b>, Zhou Li, Daiping Liu, Chase Cotton, and Haining Wang.<br><b><!--a href="papers/SRDS21.pdf" target="_blank"-->A Comprehensive Measurement-based Investigation of DNS Hijacking</b>,<br>In <i>the 40th International Symposium on Reliable Distributed Systems (<a href="https://srds-conference.org/" target="_blank"><b>SRDS</b></a>)</i>, 2021.
+				<a data-toggle="collapse" href="#HouserSRDS2021" aria-expanded="false" aria-controls="HouserSRDS2021" class="sulightfont"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>BibTex</a><div class="collapse" id="HouserSRDS2021"><div class="card card-body sulightfont" style="margin-left:20px;margin-top:10px;">@inproceedings{Houser:SRDS2021,<p style="margin-left:40px;">author = {Houser, Rebekah and Hao, Shuai and Li, Zhou and Liu, Daiping and Cotton, Chase and Wang, Haining},<br>title = {{A Comprehensive Measurement-based Investigation of DNS Hijacking}},<br>booktitle = {the 40th International Symposium on Reliable Distributed Systems (SRDS)},<br>year = {2021},<br><span style="margin-left:-30px;">}</span>
+				<p><a data-toggle="collapse" href="#HouserSRDS2021abstract" aria-expanded="false" aria-controls="HouserSRDS2021abstract" class="sulightfont"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right:2px;"></span> Abstract</a><div class="collapse" id="HouserSRDS2021abstract"><div class="card card-body sulightfont"><p>Attacks against the domain name system (DNS) have long plagued the Internet, requiring continual investigation and vigilance to prevent the abuse of this critical infrastructure. Among these attacks, DNS hijacking has repeatedly asserted itself as one of the most serious threats. In recent years, the severity of DNS hijacking has motivated renewed interests in developing more robust defenses. The size, dynamism, and diversity of the DNS ecosystem present nontrivial challenges to crafting an effective and scalable defense. Further, the relative rarity of documented DNS hijacking attacks makes them difficult to study in-depth. In this paper, we attempt to address the challenges in two thrusts. We first conduct an analysis based on the reports of confirmed DNS hijacking attacks and passive DNS records to characterize known DNS hijacking attacks and identify features for building defense mechanisms. Then, we explore the extent to which the characteristic features can be used to build a DNS hijacking detection mechanism and evaluate its effectiveness from the perspective of a network gateway.</div></div>
+				</div></div>
+			</li>
 			<li class="list-group-item">
 				Lin Jin, <b>Shuai Hao</b>, Haining Wang, and Chase Cotton.<br><b><a href="papers/www21-DoE.pdf" target="_blank">Understanding the Impact of Encrypted DNS on Internet Censorship</a></b>,<br>In <i>the 30th The Web Conference (<a href="https://www2021.thewebconf.org/" target="_blank"><b>WWW</b></a>)</i>, 2021.
 				<a data-toggle="collapse" href="#JinWWW2021" aria-expanded="false" aria-controls="JinWWW2021" class="sulightfont"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>BibTex</a><div class="collapse" id="JinWWW2021"><div class="card card-body sulightfont" style="margin-left:20px;margin-top:10px;">@inproceedings{Jin:WWW2021,<p style="margin-left:40px;">author = {Jin, Lin and Hao, Shuai and Wang, Haining and Cotton, Chase},<br>title = {{Understanding the Impact of Encrypted DNS on Internet Censorship}},<br>booktitle = {the 30th The Web Conference (WWW)},<br>year = {2021},<br><span style="margin-left:-30px;">}</span>
@@ -177,12 +195,13 @@
         <h3>Professional Activities</h3><br>
         <ul>
 		<li><b>Program Committee</b><br>
-			IEEE/IFIP DSN <a href="https://dsn2020.webs.upv.es/" target="_blank">'20</a> <a href="http://dsn2021.ntu.edu.tw" target="_blank">'21</a><br>
+			IEEE/IFIP DSN <a href="https://dsn2022.github.io/" target="_blank">'22</a> <a href="http://dsn2021.ntu.edu.tw" target="_blank">'21</a> <a href="https://dsn2020.webs.upv.es/" target="_blank">'20</a><br>
 			ICICS '21
 		<p style="margin-top:12px;"></p>
 	    <li><p data-toggle="collapse" data-target="#ConfReview"><b>Conference Reviewer <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></b>
 			<div id="ConfReview" class="collapse" style="margin-top:-6px;">
 			ACM IMC '18 (Shadow PC)<br>
+			ESORICS '21<br>
 			IEEE INFOCOM '14 '15 '16 '17 '18 '19 '20 '21<br>
 			IEEE/IFIP DSN '14 '15 '16 '17 '19<br>
 			ACM CCS '17 '18<br>
@@ -216,9 +235,9 @@
 		<div id="teaching"></div>
 		<h3>Teaching</h3><br>
         <ul>
-			<li style="margin-bottom:6px; line-height:120%">Fall 2021: CS 772/872 - <!--a href="teaching/CS772/NetSec_Fall2021.html" target="_blank"-->Network Security: Concept, Protocols, and Programming</a>
-			<!--li style="margin-bottom:6px; line-height:120%">Spring 2021: CS 795/895 - Topics: Advanced Computer and Network Security</a-->
-			<li style="margin-bottom:6px; line-height:120%">Spring 2021: CS 795/895 - <a href="teaching/CNS795/CNS_Spring2021.html" target="_blank">Topics: Computer and Network Security</a>
+			<!--li style="margin-bottom:6px; line-height:120%">Fall 2021: CS 772/872 - Malware-->
+			<li style="margin-bottom:6px; line-height:120%">Spring 2021: CS 795/895 - Topics: Advanced Computer and Network Security
+			<!--li style="margin-bottom:6px; line-height:120%">Spring 2021: CS 795/895 - <a href="teaching/CNS795/CNS_Spring2021.html" target="_blank">Topics: Advanced Computer and Network Security</a-->
 			<!--li style="margin-bottom:6px; line-height:120%">Fall 2020: CS 455/555 - Introduction to Networks and Communication-->
 			<li style="margin-bottom:6px; line-height:120%">Spring 2020: CS 465/565 - Information Assurance
 			<li style="margin-bottom:6px; line-height:120%">Fall 2019: CS 795/895 - Topics: Internet Infrastructure and Security
@@ -232,7 +251,7 @@
         <li style="margin-bottom:8px;">Visiting Research Scholar, Tsinghua University, 2011 - Mentor: Dr. <a href="http://www.thucsnet.org/xuke.html" target="_blank">Ke Xu</a></li>
         </ul>
         <hr>
-        <span class="sulightfont sulightcolor" style="margin-left:5px;">Updated 2021/4</span><br>
+        <span class="sulightfont sulightcolor" style="margin-left:5px;">Updated 2021/8</span><br>
         </div>
         </div>
         </div>
