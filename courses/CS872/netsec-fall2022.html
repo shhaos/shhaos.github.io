@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <link rel="icon" sizes="12x12" href="/assets/images/odufavicon.png">
+
+    <title>CS772/872 - Advanced Computer and Network Security</title>
+	<meta name="robots" content="noindex, nofollow" /> 
+
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../../assets/css/sticky-footer.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+		<div class="lead" style="margin-bottom:-20px;">CS772/872 // Fall 2022 //</div>
+        <h3 style="line-height:125%;"><b>Advanced Computer and Network Security</b></h3>
+      </div>
+      <div class="lead">
+  	    <table>
+  	    <tr><td valign=top>Instructor: </td> 
+  		<td>
+  			<a href="https://shhaos.github.io/" target="_blank">Shuai Hao</a><br>
+  			Email: shao -AT- odu.edu <br>
+  			Office: 3111 E&CS Building
+  		</td>
+  	    </tr>
+        <tr><td style="padding-right:15px;">Lecture time: </td> <td>TR 4:20 pm - 5:35 pm</td></tr>
+        <tr><td>Location: </td> <td>DRGS 2104</td></tr>
+		<tr><td>Office hours: </td> <td> 2-4 pm Wednesday</td></tr>
+  	    </table>
+	  </div>
+	  
+	  <hr>
+	  <p>This course is a research-oriented, graduate-level course, centering around both classic and state-of-the-art techniques on various aspects of compter and network security. The course involves both reading/discussing research papers and a term project/final report. The course aims to provide a thorough grounding on the computer and network security for the students who are interested in conducting research in this area, as well as a comprehensive background for those generally interested in networking or security. See below the completed paper list for the topics covered in the course.
+		  
+	  <hr>
+		
+	  <p><h4><b>Course Schedule</b></h4></p>
+	      <p>The schedule could be revised as the course progresses.<br></p>
+		    <p class="warning">The papers will be presented as a seminar-style presentation in of ~1 hour talk plus 15 mins questions/discussions. (<b>Note</b>: <i>You should consider the audience who are not expert in the relevant topic and provide a comprehensive and thorough technical background for the presented paper, which may require you adopt some materials not included in the paper.</i>) <!--Others will be presented as the <b><i>Short</i></b> presentations (a conference-style, 20 - 25 mins talk with 10 mins discussion).--> The sequence of presentations aim to somehow provide prerequisites for the following papers. Keeping the sequence is suggested. The adjustment is possible but need receive instructor approval.<br>
+	  		<!--p style="margin-bottom:16px;"><b>Note</b>: The <code class="ref">Reference Reading</code> provides a background, comparison, or supplement to the presented paper. Reading these papers is not required and it is up to the presenter to decide if/how to involve the reference reading paper in the presentation.<br-->
+
+			<table class="table table-condensed table-bordered table-hover">
+	  		<thead> <tr> <th style="vertical-align:middle; text-align:center;">Date/Topic</th> <th style="vertical-align:middle; text-align:center;">Papers/Notes</th> <th style="vertical-align:middle; text-align:center;">Presenter</th></tr> </thead>
+			<tbody>
+				<tr>  <td style="vertical-align:middle; text-align:center;">8/30</td> <td >Lecture: Course Introduction [<a href="intro.pdf" target="_blank">slides</a>]</td><td style="vertical-align:middle; text-align:center;" rowspan="9">Instructor</td></tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">9/1</td> <td >Lecture: Foundations of Networking and Internet Security [<a href="papers/netw.pdf" target="_blank">slides</a>]</td> </tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">9/6</td> <td >Lecture: Foundations of Cryptography [<a href="papers/crypto.pdf" target="_blank">slides</a>]</td> </tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">9/8</td> <td >Lecture: Cloud Security [<a href="papers/cloud.pdf" target="_blank">slides</a>]<br>Lecture: System Security [<a href="papers/system.pdf" target="_blank">slides</a>]</td> </tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">9/13</td> <td >Lecture: Web and Browser Security 1: Web Security [<a href="papers/web1.pdf" target="_blank">slides</a>]</td> </tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">9/15</td> <td >Lecture: Web and Browser Security 2: Vulnerabilities [<a href="papers/web2.pdf" target="_blank">slides</a>]</td></tr>
+				<tr> <td style="vertical-align:middle; text-align:center;">9/20<br>DNS Security</td> <td>Paper: <a href="papers/ndss11_exposure.pdf" target="_blank">EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis</a>, NDSS'11</td></tr>
+				<tr> <td style="vertical-align:middle; text-align:center;">9/22<br>DNS Security</td> <td>Paper: <a href="papers/ccs16_dares.pdf" target="_blank">All Your DNS Records Point to Us: Understanding the Security Threats of Dangling DNS Records</a>, ACM CCS'16</td></tr>
+				<tr> <td style="vertical-align:middle; text-align:center;">9/29<br>Botnet</td> <td>Paper: <a href="papers/usesec17_mirai.pdf" target="_blank">Understanding the Mirai Botnet</a>, USENIX Security'17</td>
+				  <!--p style="margin-top:10px; margin-bottom:-1px;">(<code class="ref">Reference Reading</code>: <i><a href="papers/ccs09_torpig.pdf" target="_blank">Your Botnet is My Botnet: Analysis of a Botnet Takeover</a>, ACM CCS'09</i>)</td--> 
+	  			  <!--tr>  <td style="vertical-align:middle; text-align:center;">9/22<br>Infrastructure</td> <td >Paper: <a href="papers/imc12_dns-cdn.pdf" target="_blank">Content Delivery and the Natural Evolution of DNS: Remote DNS Trends, Performance Issues and Alternative Solutions</a>, ACM IMC'12<br><p style="margin-top:10px; margin-bottom:-1px;">(<code class="ref">Reference Reading</code>: <i><a href="papers/sigcomm15_edns.pdf" target="_blank">End-User Mapping: Next Generation Request Routing for Content Delivery</a>, ACM SIGCOMM'15</i>)</td> </tr>
+	  			  <tr>  <td style="vertical-align:middle; text-align:center;">9/29<br>Infrastructure</td> <td ><a href="papers/atc16_satellite.pdf" target="_blank">Satellite: Joint Analysis of CDNs and Network-Level Interference</a>, USENIX ATC'16</td>  </tr-->
+				<tr> <td style="vertical-align:middle; text-align:center;">10/4</td> <td colspan="3" style="vertical-align:middle; text-align:center;"><b>No Class</b>: <i>Instructor Traveling</i><br><code>Due: Paper Selection for Presention</code></td></tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">10/6<br>Censorship</td> <!--td>Lecture: Ethics for Security Research<br--><td>Paper: <a href="papers/oakland17_disruption.pdf" target="_blank">Understanding the Practices of Global Censorship through Accurate, End-to-End Measurements</a>, ACM SIGMETRICS'22</td><td style="vertical-align:middle; text-align:center;">Instructor</td>
+				<tr> <td style="vertical-align:middle; text-align:center;">10/11</td> <td colspan="3" style="vertical-align:middle; text-align:center;"><b>No Class</b>: <i>Fall Break</i><br><code>Due: Final Report Topic Selection</code></td></tr>
+				<!--tr> <td style="vertical-align:middle; text-align:center;">10/13<br>Botnet/DNS</td> <td>Paper: <a href="papers/usesec12-dgabots.pdf" target="_blank">From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware</a>, USENIX Security'12</td> </tr-->
+				<tr> <td style="vertical-align:middle; text-align:center;">10/13<br>DDoS</td> <td>Paper: <a href="papers/ndss14_ddos.pdf" target="_blank">Amplification Hell: Revisiting Network Protocols for DDoS Abuse</a>, NDSS'14</td> <td></td> </tr>
+				<tr> <td style="vertical-align:middle; text-align:center;">10/18<br>NIDS</td> <td>Paper: <a href="papers/usesec98_bro.pdf" target="_blank">Bro: A System for Detecting Network Intruders in Real-Time</a>, USENIX Security'98</td><td></td>
+				<tr>  <td style="vertical-align:middle; text-align:center;">10/27<br>PKI/DNSSEC</td> <td>Paper: <a href="papers/usesec17_dnssec.pdf" target="_blank">A Longitudinal, End-to-End View of the DNSSEC Ecosystem</a>, USENIX Security'17</td><td></td>
+				<tr > <td style="vertical-align:middle; text-align:center;">11/1<br>PKI/HTTPS</td> <td>Paper: <a href="papers/oakland14_https+cdn.pdf" target="_blank">When HTTPS Meets CDN: A Case of Authentication in Delegated Service</a>, IEEE S&P (Oakland)'14</td><td></td>
+				<tr>  <td style="vertical-align:middle; text-align:center;">11/3<br>PKI/RPKI</td> <td>Paper: <a href="papers/ndss17_rpki.pdf" target="_blank">Are We There Yet? On RPKI’s Deployment and Security</a>, NDSS'17</td><td></td>
+				<tr> <td style="vertical-align:middle; text-align:center;">11/8</td> <td colspan="3" style="vertical-align:middle; text-align:center;"><b>No Class</b>: <i>Eelection Day Holiday</i></td></tr>
+				<tr> <td style="vertical-align:middle; text-align:center;">11/11</td> <td colspan="3" style="vertical-align:middle; text-align:center;"><b>No Class</b>: <i>Instructor Travelling</i></td></tr>
+				<tr>  <td style="vertical-align:middle; text-align:center;">11/17<br>Web brwoser</td> <td>Paper: <a href="papers/ccs07_sameorigin.pdf" target="_blank">Dynamic Pharming Attacks and Locked Same-origin Policies for Web Browsers</a>, ACM CCS'07</td> <td></td>
+				<tr > <td style="vertical-align:middle; text-align:center;">11/22<br>Web tracking</td> <td>Paper: <a href="papers/nsdi12-webtrack.pdf" target="_blank">Detecting and Defending Against Third-Party Tracking on the Web</a>, NSDI'12</td> <td></td>
+				<tr> <td style="vertical-align:middle; text-align:center;">11/24</td> <td colspan="3" style="vertical-align:middle; text-align:center;"><b>No Class</b>: <i>Thanksgiving Holiday</i></td></tr>
+				<!--tr> <th scope=row>3</th> <td>PKI/HTTPS</td> <td>The Rise of Certificate Transparency and Its Implications on the Internet Ecosystem, ACM IMC'18</td>  </tr-->
+				<!--tr> <th scope=row>3</th> <td>PKI/HTTPS</td> <td>An End-to-End Measurement of Certificate Revocation in the Web's PKI</td>  </tr-->
+				<!--tr class="info"> <th scope=row>3</th> <td>Infrastructure; Routing</td> <td>AS Relationships, Customer Cones, and Validation, ACM IMC'13</td>  </tr-->
+				<!--tr>  <td>Routing Security</td> <td><a href="papers/oakland07_bgphijack.pdf" target="_blank">Accurate Real-time Identification of IP Prefix Hijacking</a>, IEEE S&P (Oakland)'07<br> <p style="margin-top:10px; margin-bottom:-1px;">(<code class="ref">Reference Reading</code>: <i><a href="papers/sigcomm07_interception.pdf" target="_blank">A Study of Prefix Hijacking and Interception in the Internet</a>, SIGCOMM'07</i>)</td>  </tr-->
+				<tr>  <td style="vertical-align:middle; text-align:center;">11/29<br>Cloud</td> <td>Paper: <a href="papers/ccs09_cloud.pdf" target="_blank">Hey, You, Get Off of My Cloud: Exploring Information Leakage in Third-Party Compute Clouds</a>, ACM CCS'09</td> <td></td>
+				<tr>  <td style="vertical-align:middle; text-align:center;">12/1<br>Cloud</td> <td>Paper: <a href="papers/sp11_homealone.pdf" target="_blank">HomeAlone: Co-Residency Detection in the Cloud via Side-Channel Analysis</a>, IEEE S&P (Oakland)'11</td> <td></td>
+				<tr>  <td style="vertical-align:middle; text-align:center;">12/6<br>Spam</td> <td>Paper: <a href="papers/oakland11_spamchain.pdf" target="_blank">Click Trajectories: End-to-End Analysis of the Spam Value Chain</a>, IEEE S&P (Oakland)'11</td> <td></td>
+				<tr>  <td style="vertical-align:middle; text-align:center;">12/8<br>Project & Summary</td> <td>Project Presentations (5 min each)<br>Lecture: Course Summary</td> <td></td>
+				<!--tr >  <td>Anonymity</td> <td><a href="papers/usesec15_raptor.pdf" target="_blank">RAPTOR: Routing Attacks on Privacy in Tor</a>, USENIX Security'15</td-->
+				<!--tr >  <td>Anonymity</td> <td><a href="papers/ndss16_astoria.pdf" target="_blank">Measuring and Mitigating AS-level Adversaries against Tor</a>, NDSS'16</td--> 
+				<!--tr>  <td>Censorship</td> <td><a href="papers/usesec17_dnsmanipl.pdf" target="_blank">Global Measurement of DNS Manipulation</a>, USENIX Security'17</td--> 
+				<!--tr>  <td>Web</td> <td><a href="papers/oakland13_darkweb.pdf" target="_blank">Finding the Linchpins of the Dark Web: a Study on Topologically Dedicated Hosts on Malicious Web Infrastructures</a>, IEEE S&P (Oakland)'13</td-->
+				<!--p style="margin-top:10px; margin-bottom:-1px;">(<i>Alternative: <a href="papers/pets18_adtracking.pdf" target="_blank">Diffusion of User Tracking Data in the Online Advertising Ecosystem</a>, PETS'18</i>)</p-->
+				<!--tr>  <td>Web</td> <td><a href="papers/ccs07_sameorigin.pdf" target="_blank">Dynamic Pharming Attacks and Locked Same-origin Policies for Web Browsers</a>, ACM CCS'07<br><p style="margin-top:10px; margin-bottom:-1px;">(<code class="ref">Reference Reading</code>: <i>Google Browser Security Handbook, <a href="https://code.google.com/archive/p/browsersec/wikis/Part1.wiki" target="_blank">Part1</a>, <a href="https://code.google.com/archive/p/browsersec/wikis/Part2.wiki" target="_blank">Part2</a></i>)</td>  </tr-->
+				<!--tr> <th scope=row>3</th> <td>Web</td> <td>Cookies Lack Integrity: Real-World Implications</td> <td></td-->
+				<!--tr>  <td>Ad network</td> <td><a href="papers/ccs14-clickfraud.pdf" target="_blank">Characterizing Large-Scale Click Fraud in ZeroAccess</a>, ACM CCS'14.</td>  </tr>
+				<tr>  <td>TLS</td> <td><a href="papers/imc14_heartbleed.pdf" target="_blank">The Matter of Heartbleed</a>, ACM IMC'14<br></td>  </tr-->
+				<!--tr>  <td>Email</td> <td><a href="papers/imc15_email.pdf" target="_blank">Neither Snow Nor Rain Nor MITM... An Empirical Analysis of Email Delivery Security</a>, ACM IMC'15</td>  </tr-->
+				<!--tr> <th></th> <td>Middleware</td> <td>BlindBox: Deep Packet Inspection over Encrypted Traffic, SIGCOMM'15</td>  </tr-->
+				<!--tr> <th></th> <td>Exploitation</td> <td>MineSweeper: An In-depth Look into Drive-by Cryptocurrency Mining and Its Defense</td>  </tr-->
+	  		  </tbody>
+	        </table>
+
+	    <p style="margin-top:6px;"><h4><b>Completed Paper List</b></h4></p>
+			<!--p>The papers studied in this course intend to be selected from the following pool, and may not be presented for all.<br></p-->
+			
+			<p style="margin-top:16px;"><h5><b>1. System Security</b></h5></p>
+			<a href="papers/sec98_StackGuard.pdf" target="_blank">StackGuard: Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks</a>, USENIX Security'98.<br>
+			<a href="papers/sec02_Setuid.pdf" target="_blank">Setuid Demystified</a>, USENIX Security'02.<br>
+			<a href="papers/sp10_HyperSafe.pdf" target="_blank">HyperSafe: A Lightweight Approach to Provide Lifetime Hypervisor Control-Flow Integrity</a>, IEEE S&P (Oakland)'10.<br>
+			<a href="papers/sp12_PermissionGranting.pdf" target="_blank">User-Driven Access Control: Rethinking Permission Granting in Modern Operating Systems</a>, IEEE S&P (Oakland)'12.<br>
+			<a href="papers/ccs19_OPERA.pdf" target="_blank">OPERA: Open Remote Attestation for Intel’s Secure Enclaves</a>, ACM CCS'19.<br>
+			
+			<p><h5><b>2. Network Security</b></h5></p>
+			<a href="papers/usesec98_bro.pdf" target="_blank">Bro: A System for Detecting Network Intruders in Real-Time</a>, USENIX Security'98.<br>
+			<a href="papers/usesec01_norm.pdf" target="_blank">Network Intrusion Detection: Evasion, Traffic Normalization, and End-to-End Protocol Semantics</a>, USENIX Security'01.<br>
+			<a href="papers/usesec01_dos.pdf" target="_blank">Inferring Internet Denial of Service Activity</a>, USENIX Security'01.<br>
+			<a href="papers/oakland04_siff.pdf" target="_blank">SIFF: A Stateless Internet Flow Filter to Mitigate DDoS Flooding Attacks</a>, IEEE S&P (Oakland)'04.<br>
+			<a href="papers/usesec12-dgabots.pdf" target="_blank">From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware</a>, USENIX Security'12.<br>
+			<a href="papers/sigcomm08_spam.pdf" target="_blank">Spamming Botnets: Signatures and Characteristics</a>, ACM SIGCOMM'08.<br>
+			<a href="papers/ccs09_torpig.pdf" target="_blank">Your Botnet is My Botnet: Analysis of a Botnet Takeover</a>, ACM CCS'09.<br>
+			<a href="papers/ndss11_exposure.pdf" target="_blank">EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis</a>, NDSS'11.<br>
+			<a href="papers/usesec17_mirai.pdf" target="_blank">Understanding the Mirai Botnet</a>, USENIX Security'17.<br>
+			<a href="papers/usesec17_dnssec.pdf" target="_blank">A Longitudinal, End-to-End View of the DNSSEC Ecosystem</a>, USENIX Security'17.<br>
+			<a href="papers/usesec18_redirect.pdf" target="_blank">End-Users Get Maneuvered: Empirical Analysis of Redirection Hijacking in Content Delivery Networks</a>, USENIX Security'18.<br>
+			<!-- <a href="papers/acmq14_rpki.pdf" target="_blank">Why Is It Taking So Long to Secure Internet Routing</a>, ACM Queue'14-->
+			<a href="papers/usesec15_raptor.pdf" target="_blank">RAPTOR: Routing Attacks on Privacy in Tor</a>, USENIX Security'15.<br>
+			<a href="papers/oakland14_https+cdn.pdf" target="_blank">When HTTPS Meets CDN: A Case of Authentication in Delegated Service</a>, IEEE S&P (Oakland)'14.<br>
+			<a href="papers/sec14_Amplification.pdf" target="_blank">Exit from Hell? Reducing the Impact of Amplification DDoS Attacks</a>, USENIX Security'14.<br>
+			<a href="papers/ndss17_rpki.pdf" target="_blank">Are We There Yet? On RPKI’s Deployment and Security</a>, NDSS'17.<br>
+			
+			<p><h5><b>3. Cloud Security</b></h5></p>
+			<a href="papers/ccs09_CloudSec.pdf" target="_blank">Hey, You, Get Off of My Cloud: Exploring Information Leakage in Third-Party Compute Clouds</a>, ACM CCS'09.<br>
+			<a href="papers/sp11_homealone.pdf" target="_blank">HomeAlone: Co-Residency Detection in the Cloud via Side-Channel Analysis</a>, IEEE S&P (Oakland)'11.<br>
+			<a href="papers/ccs14_SideChannel.pdf" target="_blank">Cross-Tenant Side-channel Attacks in PaaS Clouds</a>, ACM CCS'14.<br>
+			<a href="papers/ndss17_TenantGuard.pdf" target="_blank">TenantGuard: Scalable Runtime Verification of Cloud-Wide VM-Level Network Isolation</a>, NDSS'17.<br>
+			<a href="papers/ccs2015_cloudpiercer.pdf" target="_blank">Maneuvering Around Clouds: Bypassing Cloud-based Security Providers</a>, ACM CCS'15.<br>
+			<a href="papers/ccs16_dares.pdf" target="_blank">All Your DNS Records Point to Us: Understanding the Security Threats of Dangling DNS Records</a>, ACM CCS'16.<br>
+			
+			<p><h5><b>4. Web Security</b></h5></p>
+		    <a href="papers/ccs07_DynamicPharming.pdf" target="_blank">Dynamic Pharming Attacks and Locked Same-origin Policies for Web Browsers</a>, ACM CCS'07.<br>
+			<a href="papers/oakland11_spamchain.pdf" target="_blank">Click Trajectories: End-to-End Analysis of the Spam Value Chain</a>, IEEE S&P (Oakland)'11.<br>
+			<a href="papers/ccs14-clickfraud.pdf" target="_blank">Characterizing Large-Scale Click Fraud in ZeroAccess</a>, ACM CCS'14.<br>
+			<a href="papers/imc20_BrowserFingerprint.pdf" target="_blank">Who Touched My Browser Fingerprint? A Large-scale Measurement Study and Classification of Fingerprint Dynamics</a>, ACM IMC'20.<br>
+			<a href="papers/ndss13_Juice.pdf" target="_blank">Juice: A Longitudinal Study of an SEO Botnet</a>, NDSS'13.<br>
+			<a href="papers/sec15_Cookies.pdf" target="_blank">Cookies Lack Integrity: Real-World Implications</a>, USENIX Security'15.<br>
+			<a href="papers/ccs14-clickfraud.pdf" target="_blank">Characterizing Large-Scale Click Fraud in ZeroAccess</a>, ACM CCS'14.<br>
+			<a href="papers/oakland13_darkweb.pdf" target="_blank">Finding the Linchpins of the Dark Web: a Study on Topologically Dedicated Hosts on Malicious Web Infrastructures</a>, IEEE S&P (Oakland)'13.<br>
+
+			<p><h5><b>5. Privacy and Censorship</b></h5></p>
+			<a href="papers/ccs14_PersistentTracking.pdf" target="_blank">The Web Never Forgets: Persistent Tracking Mechanisms in the Wild</a>, ACM CCS'14.<br>
+			<a href="papers/nsdi12-webtrack.pdf" target="_blank">Detecting and Defending Against Third-Party Tracking on the Web</a>, NSDI'12.<br>
+			<a href="papers/sp19_CloudLeak.pdf" target="_blank">Why Does Your Data Leak? Uncovering the Data Leakage in Cloud From Mobile Apps</a>, IEEE S&P (Oakland)'19.<br>
+			<a href="papers/ndss18_ OS_SideChannel.pdf" target="_blank">OS-level Side Channels without Procfs: Exploring Cross-App Information Leakage on iOS</a>, NDSS'18.<br>
+			<a href="papers/oakland17_disruption.pdf" target="_blank">Augur: Internet-Wide Detection of Connectivity Disruptions</a>, IEEE S&P (Oakland)'17.<br>
+			<a href="papers/sigmetrics22_disguiser.pdf" target="_blank">Understanding the Practices of Global Censorship through Accurate, End-to-End Measurements</a>,ACM SIGMETRICS'22.<br>
+						
+			<p><h5><b>6. Miscellaneous</b></h5></p>
+			<a href="papers/sec12-PQ.pdf" target="_blank">Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices</a>, USENIX Security'12.<br>
+			<a href="papers/ccs18_minesweeper.pdf" target="_blank">MineSweeper: An In-depth Look into Drive-by Cryptocurrency Mining and Its Defense</a>, ACM CCS'18.<br>
+			<a href="papers/ndss17_FreeLive.pdf" target="_blank">It’s Free for a Reason: Exploring the Ecosystem of Free Live Streaming Services</a>, NDSS'16.<br>
+			<a href="papers/ccs17_Deeplog.pdf" target="_blank">DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning</a>, ACM CCS'17.
+			
+	  <hr>
+
+	  <p><h4><b>Presentations</b></h4>
+		  <p>The slides used to present the paper in the class <b><i>must</i></b> be created by the presenters. Using materials from original authors or others is allowed but needs to be properly cited.
+		  <p>The slides should be sent to the instructor 2-3 days ahead of the presentation (a draft version will be fine), so the instructor can review the technical part and provide feedback, as well as arrange additional lecture for providing background if necessary.
+		  <!--p>The slides will be made available on the course website. If you are not comfortable with that, let the instructor know and you will be granted your preference.<br><br-->
+	  <hr>
+		  
+	  <p><h4><b>Paper Reviews and Final Report</b></h4>
+		  <p>Each student is required to write two paper reviews. The Final report is either a research-oriented technical report or a survey paper for a specific topic within the scope of the course. Details and instruction will be given in the lecture and post later.<br>
+	  <!--p><h4><b>Projects</b></h4-->
+
+	  <p style="margin-top:20px;"><h4><b>Grading and Policies</b></h4>
+		  <ul>
+			  <li>5% Class Participation</li>
+			  <li>40% Presentations</li>
+			  <li>20% Paper Reviews</li>
+			  <li>35% Final Report</li>
+		  </ul>
+	  <p style="margin-top:20px;"><h4><b>Reference Textbooks</b></h4>
+		  <p><i>Network Security: Private Communication in a Public World</i>, 3rd Edition, by Charlie Kaufman, Radia Perlman, Mike Speciner, and Ray Perlner<br>
+			 <i>Computer Security: A Hands-on Approach</i>, by Wenliang Du
+		  <p>The suggested textbooks are not required.
+			  
+		  
+  <hr>
+	  <p><h4><b>Course Delivery</b></h4>
+		  In in-person class, the discussed papers will be presented. Social distancing measures will be practiced. Students who are uncomfortable with participating in the classroom can submitt their recorded presentation videos.
+		    
+	</br></br></br>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Shuai Hao - Assistant Professor - Computer Sciecne @ Old Dominion University</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
